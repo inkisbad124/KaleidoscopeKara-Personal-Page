@@ -239,8 +239,11 @@ hr {
   @media (max-device-width: 820px) {
 
     .navbar {
-        height: 75px;
-        --bs-navbar-toggler-padding-x: 1rem;
+        padding: 20px 0;
+    }
+
+    .navbar-toggler {
+        height: 3rem;
     }
 
     .top-betta {
@@ -258,17 +261,19 @@ hr {
     }
 
     p {
-        font-size: larger;
+        font-size: 21px;
     }
 
     .container {
         height: 100%;
         width: 100%;
+        padding: 0;
     }
 
     .parent {
         padding-top: 75px;
-        margin: 50px auto;
+        margin: 50px 0;
+        width: 100%;
     }
 
     .gradient-background {
@@ -294,10 +299,22 @@ hr {
     .parent {
         padding-top: 75px;
         margin: 50px auto;
+        width: 80%;
+    }
+
+    .gradient-background {
+        background: rgb(66,9,121);
+        background: linear-gradient(300deg, rgba(66,9,121,1) 18%, rgba(0,111,168,1) 89%);
+        background-size: 180% 180%;
+        animation: gradient-animation 16s ease infinite;
     }
 
     .contact-me {
         margin: 20px;
+    }
+
+    .footer-link {
+        font-size: 1.5rem;
     }
   }
   

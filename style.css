@@ -264,7 +264,7 @@ hr {
         font-size: 21px;
     }
 
-    .container {
+    .carousel {
         height: 100%;
         width: 100%;
         padding: 0;
@@ -282,12 +282,28 @@ hr {
         background-size: 180% 180%;
         animation: gradient-animation 16s ease infinite;
     }
+
+    .contact-message {
+        width: 80%;
+    }
   }
 
   @media (max-device-width: 1100px) {
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .navbar-toggler {
+        height: 3rem;
+    }
+
     .intro {
         width: 80%;
         margin-top: 50px;
+    }
+
+    p {
+        font-size: 21px;
     }
 
     .container {
@@ -311,6 +327,10 @@ hr {
 
     .contact-me {
         margin: 20px;
+    }
+
+    .contact-message {
+        width: 80%;
     }
 
     .footer-link {

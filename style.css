@@ -234,7 +234,47 @@ hr {
     color: #eaf6f6;
   }
 
-  @media (max-width:1300px) {
+  @media (max-device-width: 820px) {
+    .top-betta {
+        position: absolute;
+        right: 100px;
+    }
+
+    .betta-transparent {
+        position: absolute;
+        left: 50px;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+  }
+
+  @media (max-device-width: 1100px) {
+    .intro {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .parent {
+        padding-top: 100px;
+        margin: auto;
+        width: 75%;
+    }
+
+    .contact-me {
+        margin: 20px;
+    }
+  }
+  
+  @media (max-device-width:1300px) {
     .top-betta {
         position: absolute;
         right: 200px;
@@ -247,14 +287,4 @@ hr {
     }
   }
 
-  @media (max-width: 820px) {
-    .top-betta {
-        position: absolute;
-        right: 100px;
-    }
-
-    .betta-transparent {
-        position: absolute;
-        left: 50px;
-    }
-  }
+  

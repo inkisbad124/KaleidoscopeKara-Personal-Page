@@ -154,15 +154,16 @@ hr {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: repeat(1 1fr);
-    width: 50%;
+    width: 70%;
     margin: 100px auto 0 auto;
     text-align: left;
-    row-gap: 2rem;
+    row-gap: 4rem;
 }
 
 .shirt-img {
     height: 100%;
     width: 100%;
+    padding-right: 20px;
 }
 
 .etsy {
@@ -173,6 +174,7 @@ hr {
 .fishkeeping-img {
     height: 100%;
     width: 100%;
+    padding-right: 20px;
 }
 
 .resume {
@@ -235,6 +237,12 @@ hr {
   }
 
   @media (max-device-width: 820px) {
+
+    .navbar {
+        height: 75px;
+        --bs-navbar-toggler-padding-x: 1rem;
+    }
+
     .top-betta {
         position: absolute;
         right: 100px;
@@ -245,9 +253,29 @@ hr {
         left: 50px;
     }
 
+    h2 {
+        padding-top: 50px;
+    }
+
+    p {
+        font-size: larger;
+    }
+
     .container {
         height: 100%;
         width: 100%;
+    }
+
+    .parent {
+        padding-top: 75px;
+        margin: 50px auto;
+    }
+
+    .gradient-background {
+        background: rgb(66,9,121);
+        background: linear-gradient(300deg, rgba(66,9,121,1) 18%, rgba(0,111,168,1) 89%);
+        background-size: 180% 180%;
+        animation: gradient-animation 16s ease infinite;
     }
   }
 
@@ -264,9 +292,8 @@ hr {
     }
 
     .parent {
-        padding-top: 100px;
-        margin: auto;
-        width: 75%;
+        padding-top: 75px;
+        margin: 50px auto;
     }
 
     .contact-me {
